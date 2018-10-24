@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gp4-y0-rDd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--devLogViewController-->
+        <scene sceneID="CFN-2g-a14">
+            <objects>
+                <tableViewController storyboardIdentifier="devLogViewController" title="devLogViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mk8-QI-MI8" customClass="LogFileTableViewController" customModule="Djingo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="no4-8Z-ws3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LogFileCell" textLabel="c5j-3y-YWG" style="IBUITableViewCellStyleDefault" id="bWS-S2-oEX">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bWS-S2-oEX" id="bsI-ga-aJO">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="c5j-3y-YWG">
+                                            <rect key="frame" x="16" y="0.0" width="324" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mk8-QI-MI8" id="4eR-HR-bFJ"/>
+                            <outlet property="delegate" destination="mk8-QI-MI8" id="arS-Ut-cvi"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Clear all logs" id="d74-2I-H8m">
+                            <connections>
+                                <action selector="addTestLogsWithSender:" destination="mk8-QI-MI8" id="UM8-kO-AiB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="SMX-Gw-eTE"/>
+                        <barButtonItem title="Archive log" id="jU8-k0-x6a">
+                            <connections>
+                                <action selector="rollLogFileWithSender:" destination="mk8-QI-MI8" id="yu8-UT-630"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="trh-dD-BqW"/>
+                        <barButtonItem title="Send all as zip" id="SQf-CK-QVG">
+                            <connections>
+                                <action selector="mailAllZippedLogsWithSender:" destination="mk8-QI-MI8" id="n1m-3e-neW"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Log Files" id="Wb3-tJ-QaX">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="pnP-92-h0t">
+                            <connections>
+                                <action selector="xibHideLogs:" destination="mk8-QI-MI8" id="mna-5u-8Nh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Dbq-pe-yJK" kind="show" identifier="TextViewSegue" id="tLM-hh-Gal"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Su9-4A-IgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114" y="-646"/>
+        </scene>
+        <!--Log File-->
+        <scene sceneID="lte-aK-xZO">
+            <objects>
+                <viewController id="Dbq-pe-yJK" customClass="LogFileTextViewController" customModule="Djingo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GC4-hH-qRg"/>
+                        <viewControllerLayoutGuide type="bottom" id="7v5-rp-nhd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t6X-aM-1Zy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Log File Content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tzs-a0-O5p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="nK5-Of-6WN"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Send as attachment" id="ZCE-UJ-Fss">
+                            <connections>
+                                <action selector="mailWithAttachmentWithSender:" destination="Dbq-pe-yJK" id="o0Y-fP-sfr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="82g-ph-Eq2"/>
+                        <barButtonItem title="Share as text" id="aXu-sV-uBk">
+                            <connections>
+                                <action selector="shareLogFileWithSender:" destination="Dbq-pe-yJK" id="JUw-q3-OhG"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Log File" id="qaO-26-jpF"/>
+                    <connections>
+                        <outlet property="textView" destination="tzs-a0-O5p" id="zas-th-GoN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0S-Kt-h2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3045.5999999999999" y="-646.32683658170924"/>
+        </scene>
+        <!--manageLogNavController-->
+        <scene sceneID="wU1-xA-xZV">
+            <objects>
+                <navigationController storyboardIdentifier="manageLogNavController" title="manageLogNavController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" toolbarHidden="NO" id="gp4-y0-rDd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L6z-i9-GTa">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9DE-uc-WV1">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="mk8-QI-MI8" kind="relationship" relationship="rootViewController" id="tpL-fY-0do"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpO-4Y-NJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="-646"/>
+        </scene>
+    </scenes>
+</document>

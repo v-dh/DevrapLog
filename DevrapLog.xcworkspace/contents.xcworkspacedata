@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DevrapLog.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:DevrapLog"
+      name = "DevrapLog">
+      <Group
+         location = "group:DevLog"
+         name = "DevLog">
+         <FileRef
+            location = "group:LogFileTextPresenter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:LogFileListPresenter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DevLogging.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CustomLogFormatter.swift">
+         </FileRef>
+         <FileRef
+            location = "group:LogFileTableViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:LogUtils.swift">
+         </FileRef>
+         <FileRef
+            location = "group:LogFileTextViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:DevLog.storyboard">
+         </FileRef>
+         <FileRef
+            location = "group:CustomLogFileManager.swift">
+         </FileRef>
+         <FileRef
+            location = "group:CustomLogger.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:DevrapLog.h">
+      </FileRef>
+      <Group
+         location = "group:Reachability"
+         name = "Reachability">
+         <FileRef
+            location = "group:Reachability.swift">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
