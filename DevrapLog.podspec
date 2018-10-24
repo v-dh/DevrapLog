@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "DevrapLog"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of DevrapLog."
+  spec.summary      = "DevrapLog."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,11 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+			Computes the meaning of life.
+                     Features:
+                     1. Is self aware
+                     ...
+                     42. Likes candies.
                    DESC
 
   spec.homepage     = "http://EXAMPLE/DevrapLog"
@@ -38,7 +43,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -63,7 +68,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
+  spec.platform     = :ios
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -79,7 +84,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://EXAMPLE/DevrapLog.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "git@github.com:v-dh/DevrapLog.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,9 +94,7 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "Sources/DevLog/", "Sources/Reachability/"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -132,6 +135,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  spec.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
+  spec.dependency 'Zip', '~> 0.3'
 
 end

@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		200DA174F10CE35789945AA4 /* Pods_DevrapLog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B508E7FDCD53F196FE9E40 /* Pods_DevrapLog.framework */; };
 		6908DBE921809D38002961FA /* DevrapLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 6908DBE721809D38002961FA /* DevrapLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6908DBFA21809E16002961FA /* LogFileTextPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF021809E16002961FA /* LogFileTextPresenter.swift */; };
-		6908DBFB21809E16002961FA /* LogFileListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF121809E16002961FA /* LogFileListPresenter.swift */; };
-		6908DBFC21809E16002961FA /* DevLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF221809E16002961FA /* DevLogging.swift */; };
-		6908DBFD21809E16002961FA /* CustomLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF321809E16002961FA /* CustomLogFormatter.swift */; };
-		6908DBFE21809E16002961FA /* LogFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF421809E16002961FA /* LogFileTableViewController.swift */; };
-		6908DBFF21809E16002961FA /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF521809E16002961FA /* LogUtils.swift */; };
-		6908DC0021809E16002961FA /* LogFileTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF621809E16002961FA /* LogFileTextViewController.swift */; };
-		6908DC0121809E16002961FA /* DevLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6908DBF721809E16002961FA /* DevLog.storyboard */; };
-		6908DC0221809E16002961FA /* CustomLogFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF821809E16002961FA /* CustomLogFileManager.swift */; };
-		6908DC0321809E16002961FA /* CustomLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DBF921809E16002961FA /* CustomLogger.swift */; };
-		6908DC062180A2C7002961FA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC052180A2C7002961FA /* Reachability.swift */; };
+		6908DC3C2180CCA7002961FA /* LogFileTextPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC302180CCA7002961FA /* LogFileTextPresenter.swift */; };
+		6908DC3D2180CCA7002961FA /* LogFileListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC312180CCA7002961FA /* LogFileListPresenter.swift */; };
+		6908DC3E2180CCA7002961FA /* DevLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC322180CCA7002961FA /* DevLogging.swift */; };
+		6908DC3F2180CCA7002961FA /* CustomLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC332180CCA7002961FA /* CustomLogFormatter.swift */; };
+		6908DC402180CCA7002961FA /* LogFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC342180CCA7002961FA /* LogFileTableViewController.swift */; };
+		6908DC412180CCA7002961FA /* LogUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC352180CCA7002961FA /* LogUtils.swift */; };
+		6908DC422180CCA7002961FA /* LogFileTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC362180CCA7002961FA /* LogFileTextViewController.swift */; };
+		6908DC432180CCA7002961FA /* DevLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6908DC372180CCA7002961FA /* DevLog.storyboard */; };
+		6908DC442180CCA7002961FA /* CustomLogFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC382180CCA7002961FA /* CustomLogFileManager.swift */; };
+		6908DC452180CCA7002961FA /* CustomLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC392180CCA7002961FA /* CustomLogger.swift */; };
+		6908DC462180CCA7002961FA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6908DC3B2180CCA7002961FA /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,17 +28,17 @@
 		6908DBE421809D38002961FA /* DevrapLog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DevrapLog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6908DBE721809D38002961FA /* DevrapLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevrapLog.h; sourceTree = "<group>"; };
 		6908DBE821809D38002961FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6908DBF021809E16002961FA /* LogFileTextPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileTextPresenter.swift; sourceTree = "<group>"; };
-		6908DBF121809E16002961FA /* LogFileListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileListPresenter.swift; sourceTree = "<group>"; };
-		6908DBF221809E16002961FA /* DevLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevLogging.swift; sourceTree = "<group>"; };
-		6908DBF321809E16002961FA /* CustomLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogFormatter.swift; sourceTree = "<group>"; };
-		6908DBF421809E16002961FA /* LogFileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileTableViewController.swift; sourceTree = "<group>"; };
-		6908DBF521809E16002961FA /* LogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
-		6908DBF621809E16002961FA /* LogFileTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileTextViewController.swift; sourceTree = "<group>"; };
-		6908DBF721809E16002961FA /* DevLog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DevLog.storyboard; sourceTree = "<group>"; };
-		6908DBF821809E16002961FA /* CustomLogFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogFileManager.swift; sourceTree = "<group>"; };
-		6908DBF921809E16002961FA /* CustomLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogger.swift; sourceTree = "<group>"; };
-		6908DC052180A2C7002961FA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		6908DC302180CCA7002961FA /* LogFileTextPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileTextPresenter.swift; sourceTree = "<group>"; };
+		6908DC312180CCA7002961FA /* LogFileListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileListPresenter.swift; sourceTree = "<group>"; };
+		6908DC322180CCA7002961FA /* DevLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevLogging.swift; sourceTree = "<group>"; };
+		6908DC332180CCA7002961FA /* CustomLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogFormatter.swift; sourceTree = "<group>"; };
+		6908DC342180CCA7002961FA /* LogFileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileTableViewController.swift; sourceTree = "<group>"; };
+		6908DC352180CCA7002961FA /* LogUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtils.swift; sourceTree = "<group>"; };
+		6908DC362180CCA7002961FA /* LogFileTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileTextViewController.swift; sourceTree = "<group>"; };
+		6908DC372180CCA7002961FA /* DevLog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DevLog.storyboard; sourceTree = "<group>"; };
+		6908DC382180CCA7002961FA /* CustomLogFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogFileManager.swift; sourceTree = "<group>"; };
+		6908DC392180CCA7002961FA /* CustomLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLogger.swift; sourceTree = "<group>"; };
+		6908DC3B2180CCA7002961FA /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		BF364080B5E11DBD00181C1F /* Pods-DevrapLog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevrapLog.debug.xcconfig"; path = "Target Support Files/Pods-DevrapLog/Pods-DevrapLog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +74,7 @@
 		6908DBDA21809D38002961FA = {
 			isa = PBXGroup;
 			children = (
-				6908DC042180A2C7002961FA /* Reachability */,
+				6908DC2E2180CCA7002961FA /* Sources */,
 				6908DBE621809D38002961FA /* DevrapLog */,
 				6908DBE521809D38002961FA /* Products */,
 				40430C22C1A86EA0CAB77C70 /* Pods */,
@@ -93,37 +93,44 @@
 		6908DBE621809D38002961FA /* DevrapLog */ = {
 			isa = PBXGroup;
 			children = (
-				6908DBEF21809E16002961FA /* DevLog */,
 				6908DBE721809D38002961FA /* DevrapLog.h */,
 				6908DBE821809D38002961FA /* Info.plist */,
 			);
 			path = DevrapLog;
 			sourceTree = "<group>";
 		};
-		6908DBEF21809E16002961FA /* DevLog */ = {
+		6908DC2E2180CCA7002961FA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6908DBF021809E16002961FA /* LogFileTextPresenter.swift */,
-				6908DBF121809E16002961FA /* LogFileListPresenter.swift */,
-				6908DBF221809E16002961FA /* DevLogging.swift */,
-				6908DBF321809E16002961FA /* CustomLogFormatter.swift */,
-				6908DBF421809E16002961FA /* LogFileTableViewController.swift */,
-				6908DBF521809E16002961FA /* LogUtils.swift */,
-				6908DBF621809E16002961FA /* LogFileTextViewController.swift */,
-				6908DBF721809E16002961FA /* DevLog.storyboard */,
-				6908DBF821809E16002961FA /* CustomLogFileManager.swift */,
-				6908DBF921809E16002961FA /* CustomLogger.swift */,
+				6908DC2F2180CCA7002961FA /* DevLog */,
+				6908DC3A2180CCA7002961FA /* Reachability */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6908DC2F2180CCA7002961FA /* DevLog */ = {
+			isa = PBXGroup;
+			children = (
+				6908DC302180CCA7002961FA /* LogFileTextPresenter.swift */,
+				6908DC312180CCA7002961FA /* LogFileListPresenter.swift */,
+				6908DC322180CCA7002961FA /* DevLogging.swift */,
+				6908DC332180CCA7002961FA /* CustomLogFormatter.swift */,
+				6908DC342180CCA7002961FA /* LogFileTableViewController.swift */,
+				6908DC352180CCA7002961FA /* LogUtils.swift */,
+				6908DC362180CCA7002961FA /* LogFileTextViewController.swift */,
+				6908DC372180CCA7002961FA /* DevLog.storyboard */,
+				6908DC382180CCA7002961FA /* CustomLogFileManager.swift */,
+				6908DC392180CCA7002961FA /* CustomLogger.swift */,
 			);
 			path = DevLog;
 			sourceTree = "<group>";
 		};
-		6908DC042180A2C7002961FA /* Reachability */ = {
+		6908DC3A2180CCA7002961FA /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				6908DC052180A2C7002961FA /* Reachability.swift */,
+				6908DC3B2180CCA7002961FA /* Reachability.swift */,
 			);
-			name = Reachability;
-			path = DevrapLog/Reachability;
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6908DC0121809E16002961FA /* DevLog.storyboard in Resources */,
+				6908DC432180CCA7002961FA /* DevLog.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,16 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6908DC0021809E16002961FA /* LogFileTextViewController.swift in Sources */,
-				6908DBFF21809E16002961FA /* LogUtils.swift in Sources */,
-				6908DBFD21809E16002961FA /* CustomLogFormatter.swift in Sources */,
-				6908DBFA21809E16002961FA /* LogFileTextPresenter.swift in Sources */,
-				6908DBFE21809E16002961FA /* LogFileTableViewController.swift in Sources */,
-				6908DC0221809E16002961FA /* CustomLogFileManager.swift in Sources */,
-				6908DBFB21809E16002961FA /* LogFileListPresenter.swift in Sources */,
-				6908DBFC21809E16002961FA /* DevLogging.swift in Sources */,
-				6908DC062180A2C7002961FA /* Reachability.swift in Sources */,
-				6908DC0321809E16002961FA /* CustomLogger.swift in Sources */,
+				6908DC422180CCA7002961FA /* LogFileTextViewController.swift in Sources */,
+				6908DC412180CCA7002961FA /* LogUtils.swift in Sources */,
+				6908DC3F2180CCA7002961FA /* CustomLogFormatter.swift in Sources */,
+				6908DC3C2180CCA7002961FA /* LogFileTextPresenter.swift in Sources */,
+				6908DC402180CCA7002961FA /* LogFileTableViewController.swift in Sources */,
+				6908DC442180CCA7002961FA /* CustomLogFileManager.swift in Sources */,
+				6908DC3D2180CCA7002961FA /* LogFileListPresenter.swift in Sources */,
+				6908DC3E2180CCA7002961FA /* DevLogging.swift in Sources */,
+				6908DC462180CCA7002961FA /* Reachability.swift in Sources */,
+				6908DC452180CCA7002961FA /* CustomLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
