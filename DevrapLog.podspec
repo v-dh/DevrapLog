@@ -138,6 +138,6 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency 'CocoaLumberjack/Swift', '~> 3.4.0'
-  spec.dependency 'Zip', '~> 0.3'
+  spec.dependency 'Zip', '~> 1.1.0'
 
 end
