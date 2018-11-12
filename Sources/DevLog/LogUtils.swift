@@ -7,7 +7,10 @@
 import Foundation
 import CocoaLumberjack
 
-class LogUtils {
+public class LogUtils {
+    
+    public init() {}
+    
     /// Configure CocoaLumberjack
     private let rollingFrequency: TimeInterval = 60 * 60 * 24 // every 24 hours
     private let maximumNumberOfLogFiles: UInt = 7 // for one week
@@ -15,7 +18,7 @@ class LogUtils {
     private let doNotReuseLogFiles = false // reuse log files
 
     /// Setup CocoaLumberjack
-    func setupLogger(logLevel: DDLogLevel, addASLLogger: Bool, addTTYLogger: Bool) {
+    public func setupLogger(logLevel: DDLogLevel, addASLLogger: Bool, addTTYLogger: Bool) {
         if let logsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.path {
             let logFileManager = CustomLogFileManager(logsDirectory: logsDirectory)
             let fileLogger: DDFileLogger = DDFileLogger(logFileManager: logFileManager)

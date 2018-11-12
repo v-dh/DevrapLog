@@ -28,24 +28,23 @@ public enum LogLevel: Int {
 }
 
 /// DevLogging interface declaration
-protocol DevLogging {
+public protocol DevLogging {
     func DevLog(message: @autoclosure () -> String, file: String, function: StaticString, line: UInt, level: LogLevel)
 }
 
 /// DevLogging interface extension (necessary for using default values in function declarations)
-extension DevLogging {
+public extension DevLogging {
     func log(message: @autoclosure () -> String, file: String = #file, function: StaticString = #function, line: UInt = #line,
-             level: LogLevel)
-    {
+             level: LogLevel) {
         DevLog(message: message, file: file, function: function, line: line, level: level)
     }
 }
 
 /// LogManager
 public class LogManager {
-    static var logger: DevLogging?
+    public static var logger: DevLogging?
     static let dateFormatter: DateFormatter = createDateFormatter()
-    static var logLevel: LogLevel = LogLevel.error
+    public static var logLevel: LogLevel = LogLevel.error
 
     private class func createDateFormatter() -> DateFormatter {
         let dateFormat = "dd-MM-yyyy-MM-dd HH:mm:ss"

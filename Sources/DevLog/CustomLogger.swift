@@ -8,14 +8,17 @@ import Foundation
 import CocoaLumberjack
 
 /// Custom logger using CocoaLumberjack
-class CustomLogger: DevLogging {
-    func DevLog(message: @autoclosure () -> String, file: String = #file, function: StaticString = #function, line: UInt = #line,
-                level: LogLevel) {
+public class CustomLogger: DevLogging {
+    
+    public init(){}
+    
+    public func DevLog(message: @autoclosure () -> String, file: String = #file, function: StaticString = #function, line: UInt = #line, level: LogLevel) {
 
         let formatter = LogManager.dateFormatter
         let date = formatter.string(from: Date())
         
         var _file = String()
+        
         if file.components(separatedBy: "/").last != nil {
             _file = file.components(separatedBy: "/").last!
         }
