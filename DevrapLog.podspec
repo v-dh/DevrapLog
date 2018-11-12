@@ -1,7 +1,7 @@
 #  Be sure to run `pod spec lint DevrapLog.podspec --allow-warnings' to ensure this is a
 Pod::Spec.new do |s|
   s.name         = "DevrapLog"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "DevrapLog."
 
 
